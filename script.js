@@ -132,4 +132,22 @@ const info= ()=>{
 const v1= info()
 v1.then((res)=>{
     console.log(res);
-})
+});
+
+const getData = (dataId)=>{
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            resolve("fetching data...");
+            console.log("data", dataId)
+        },2000)
+    })
+}
+
+async function fetchData(){
+    await getData(200);
+    await getData(300);
+    await getData(400);
+    await getData(500);
+    await getData("zuhayr bhai");
+    await getData("cricket");
+}
