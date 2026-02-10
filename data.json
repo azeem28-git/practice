@@ -1,0 +1,36 @@
+{
+    "alex": {
+    "username": "alex_23",
+    "followers": 340,
+    "following": 120,
+    "posts": [
+      {
+        "image": "https://picsum.photos/seed/pic1/400/400",
+        "likes": 45,
+        "comments": 3
+      },
+      {
+        "image": "https://picsum.photos/seed/pic2/400/400",
+        "likes": 60,
+        "comments": 2
+      }
+    ]
+  },
+ "mia": {
+    "username": "mia.love",
+    "followers": 540,
+    "following": 220,
+    "posts": [
+      {
+        "image": "https://picsum.photos/seed/pic3/400/400",
+        "likes": 120,
+        "comments": 17
+      },
+      {
+        "image": "https://picsum.photos/seed/pic4/400/400",
+        "likes": 80,
+        "comments": 12
+      }
+    ]
+  }
+}
