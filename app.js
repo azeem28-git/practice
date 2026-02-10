@@ -19,8 +19,26 @@ app.get("/iron", (req,res)=>{
     res.send("this is get main path");
 })
 
+app.get("/:username/:id",(req,res)=>{
+    console.log(req.params);
+    res.send("ye user ka naam aagaya upar")
+})
+
+// app.get("/:username",(req,res)=>{
+//     let {username} = req.params;
+//     res.send(`welcome to the page of @${username}`);
+// });
+
 app.get("/cap", (req,res)=>{
     res.send("this is post main path");
+})
+
+app.get("/op", (req,res)=>{
+    let {q}= req.query;
+    if(!q){
+        res.send("no search found");
+    }
+    res.send(`search results @${q}`);
 })
 
 app.listen(port, ()=>{
