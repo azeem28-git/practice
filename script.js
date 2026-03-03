@@ -111,53 +111,53 @@
 //     })
 // });
 
-//     const virat=document.querySelector('#virat');
-//         container.after(virat);
+    const virat=document.querySelector('#virat');
+        container.after(virat);
 
-// const info= ()=>{
-//     return new Promise((resolve,reject)=>{
-//         console.log("loading info...");
-//     setTimeout(()=>{
-//         virat.addEventListener('click',()=>{
-//             alert("Virat Kohli is an Indian international cricketer and the former all-format captain of the Indian national cricket team. He is a right-handed batter and occasional right-arm medium pace bowler.")
-//             console.log("button clicked");
-//         });
-//     //    alert("Virat Kohli is an Indian international cricketer and the former all-format captain of the Indian national cricket team. He is a right-handed batter and occasional right-arm medium pace bowler.");
-//        console.log("Virat Kohli is an Indian international cricketer and the former all-format captain of the Indian national cricket team. He is a right-handed batter and occasional right-arm medium pace bowler.")
-//         resolve("info loaded")
-//     },5000)
-// })
-// }
+const info= ()=>{
+    return new Promise((resolve,reject)=>{
+        console.log("loading info...");
+    setTimeout(()=>{
+        virat.addEventListener('click',()=>{
+            alert("Virat Kohli is an Indian international cricketer and the former all-format captain of the Indian national cricket team. He is a right-handed batter and occasional right-arm medium pace bowler.")
+            console.log("button clicked");
+        });
+    //    alert("Virat Kohli is an Indian international cricketer and the former all-format captain of the Indian national cricket team. He is a right-handed batter and occasional right-arm medium pace bowler.");
+       console.log("Virat Kohli is an Indian international cricketer and the former all-format captain of the Indian national cricket team. He is a right-handed batter and occasional right-arm medium pace bowler.")
+        resolve("info loaded")
+    },5000)
+})
+}
 
-// const v1= info()
-// v1.then((res)=>{
-//     console.log(res);
-// });
+const v1= info()
+v1.then((res)=>{
+    console.log(res);
+});
 
-// const getData = (dataId)=>{
-//     return new Promise((resolve,reject)=>{
-//         setTimeout(()=>{
-//             resolve("fetching data...");
-//             console.log("data", dataId)
-//         },2000)
-//     })
-// }
+const getData = (dataId)=>{
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            resolve("fetching data...");
+            console.log("data", dataId)
+        },2000)
+    })
+}
 
-// async function fetchData(){
-//     console.log("fetching data1....");
-//     await getData(200);
-//     console.log("fetching data2....")
-//     await getData(300);
-//     console.log("fetching data3....")
-//     await getData(400);
-//     console.log("fetching data4....")
-//     await getData(500);
-//     console.log("fetching data5....")
-//     await getData("zuhayr bhai");
-//     console.log("fetching data6....")
-//     await getData("cricket");
-// }
-// fetchData();
+async function fetchData(){
+    console.log("fetching data1....");
+    await getData(200);
+    console.log("fetching data2....")
+    await getData(300);
+    console.log("fetching data3....")
+    await getData(400);
+    console.log("fetching data4....")
+    await getData(500);
+    console.log("fetching data5....")
+    await getData("zuhayr bhai");
+    console.log("fetching data6....")
+    await getData("cricket");
+}
+fetchData();
 
 // //api calling
 
